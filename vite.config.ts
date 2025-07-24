@@ -5,7 +5,8 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
 
   return {
-    base: '/habitquest/', // 👈 REQUIRED for GitHub Pages
+    // ✅ Important: This must match your GitHub repo name
+    base: '/habitquest-gamified-habit-tracker/',
     define: {
       'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
