@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     // ✅ Important: This must match your GitHub repo name
-    base: '/habitquest-gamified-habit-tracker/',
+    base: '/habitquest/',
     define: {
       'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
